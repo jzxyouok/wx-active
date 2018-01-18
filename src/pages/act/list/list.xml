@@ -1,0 +1,15 @@
+<view class="container">
+  <scroll-view class="act-list" scroll-y="true" bindscrolltolower="lower">
+    <view class="act-item" wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:key="{{index}}">
+      <navigator url="/pages/act/detail/detail?id=3">
+        <view class="title">活动名称{{item}}</view>
+        <text class="info">活动描述活动描述活动描述活动描述活动描述活动描述活动描述活动描述活动描述</text>
+        <view class="time">活动时间：2018-01-10 20:00</view>
+        <view class="apply">报名人数：(9/20)</view>
+      </navigator>
+    </view>
+  </scroll-view>
+  <view class="add-activity-btn">
+    <navigator url="/pages/act/add/add">+ 创建活动</navigator>
+  </view>
+</view>

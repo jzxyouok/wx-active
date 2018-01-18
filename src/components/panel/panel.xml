@@ -1,0 +1,6 @@
+<view class="dee-panel">
+  <view class="dee-panel-head">{{}}</view>
+  <view class="dee-panel-body">
+    <slot></slot>
+  </view>
+</view>

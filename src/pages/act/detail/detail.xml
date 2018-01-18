@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="scroll">
+    <view class="row">
+      <view class="title">{{'标题标题标题标题'}}</view>
+      <view class="desc">{{'描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述'}}</view>
+      <view class="time"><icon type="waiting" size="16"/>2018-01-01 12:00:00</view>
+    </view>
+    <view class="row">
+      <view class="panel">
+        <view class="panel-head">报名人数(9/20)</view>
+        <view class="panel-body">
+          <ul class="member-list">
+            <li wx:for="{{[1,2,3]}}" wx:key="{{index}}">
+              <img class="avatar" src=""/>
+              <view>
+                <text class="name">name</text>
+                <text class="time">2018-02-01 16:00:00</text>
+              </view>
+            </li>
+          </ul>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

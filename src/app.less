@@ -1,0 +1,70 @@
+// Global style write by less
+// Build to dist/app.wxss
+
+page {
+  // display: flex;
+  // flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  background-color: #eeeeee;
+  font-family: -apple-system-font, 'Helvetica Neue', Helvetica, 'Microsoft YaHei', sans-serif;
+  font-size: 28rpx;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+
+
+/**
+ * 表单元素样式
+ */
+.form-control{
+  margin-bottom: 30rpx;
+
+}
+input{
+  background-color: #fff;
+  height: 100rpx;
+  padding: 0 20rpx;
+  width: 100%;
+}
+textarea{
+  background-color: #fff;
+  padding: 20rpx;
+  width: 100%;
+}
+picker{
+  background-color: #fff;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 20rpx;
+  width: 100%;
+}
+button{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+
+/**
+* 组件样式
+ */
+.row{
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.panel{
+  .panel-head{
+    padding: 0 20rpx;
+    font-size: 26rpx;
+    line-height: 80rpx;
+    border-bottom: 1px solid #000;
+  }
+  .panel-body{
+    padding: 20rpx;
+  }
+}

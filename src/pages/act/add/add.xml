@@ -1,0 +1,38 @@
+<view class="container">
+  <form bindsubmit="submit" bindreset="reset">
+    <view class="form-control">
+      <input name="name" placeholder="活动名称"/>
+    </view>
+    <view class="form-control">
+      <textarea placeholder="描述"/>
+    </view>
+    <view class="form-control">
+      <label class="prepend-label">人数限制</label>
+      <input class="prepend-input" name="number" type="number" placeholder="无限制" />
+    </view>
+    <view class="form-control">
+      <picker mode="date" value="{{date}}" start="2018-01-01" end="" bindchange="bindDateChange">
+        <view class="picker">
+          <label>活动日期:</label> {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class="form-control">
+      <picker mode="time" value="{{time1}}" start="09:01" end="21:01" bindchange="bindTimeChange1">
+        <view class="picker">
+          <label>开始时间:</label> {{time1}}
+        </view>
+      </picker>
+    </view>
+    <view class="form-control">
+      <picker mode="time" value="{{time2}}" start="09:01" end="21:01" bindchange="bindTimeChange2">
+        <view class="picker">
+          <label>结束时间:</label> {{time2}}
+        </view>
+      </picker>
+    </view>
+    <view class="form-control">
+      <button type="primary" loading="{{submitFlag}}"  bindtap="submit">发布活动</button>
+    </view>
+  </form>
+</view>
