@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 微信小程序开发教程示例
 
 > 一个微信小程序（应用号）开发示例（豆瓣电影）
@@ -258,3 +259,6 @@ $ npm run build
 [MIT](./LICENSE) &copy; [汪磊](http://github.com/zce)
 
 <!-- ​wxa78c9cdabef9ea77 -->
+=======
+# wx-active
+>>>>>>> b4910cf181dca03efcdb107c13c7a5cdf93d51de
