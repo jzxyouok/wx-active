@@ -5,6 +5,7 @@
  * > 小程序支持以`CommonJS`规范组织代码结构
  */
 const wechat = require('./api/wechat.js')
+const user = require('./api/user.js')
 
 // /**
 //  * Douban API 模块
@@ -36,6 +37,7 @@ App({
   onLaunch () {
     wechat.login().then(res => {
       console.log(res)
+      user.bindUser(res.code)
       return wechat.getUserInfo()
     }).then(res => {
       console.log(res)

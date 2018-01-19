@@ -7,12 +7,13 @@ import config from 'config'
  * @param  {String} method 请求方式
  * @return {Promise}       包含抓取任务的Promise
  */
-module.exports = function (path, params, method) {
+module.exports = function (path, params, method = 'POST') {
   return new Promise((resolve, reject) => {
     wx.request({
       url: config.api + '/' + path,
       data: Object.assign({}, params),
       header: { 'Content-Type': 'json' },
+      method: method,
       success: resolve,
       fail: reject
     })
